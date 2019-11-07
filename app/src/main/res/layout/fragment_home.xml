@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/top_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_top_travel"
+            app:layout_constraintBottom_toTopOf="@id/text_promos_today"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <include
+            layout="@layout/home_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/todayPromosList"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_promos_today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/promos_today"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@id/todayPromosList"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/top_image" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/todayPromosList"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toTopOf="@id/text_tours"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_promos_today" />
+
+        <TextView
+            android:id="@+id/text_tours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/tours"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@id/text_lets_find_out_what_most_interesting_things"
+            app:layout_constraintStart_toStartOf="@id/text_promos_today"
+            app:layout_constraintTop_toBottomOf="@id/todayPromosList" />
+
+        <TextView
+            android:id="@+id/text_lets_find_out_what_most_interesting_things"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lets_find_out_what_most_interesting_things"
+            app:layout_constraintBottom_toTopOf="@id/toursList"
+            app:layout_constraintStart_toStartOf="@id/text_promos_today"
+            app:layout_constraintTop_toBottomOf="@id/text_tours" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/toursList"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/text_promotion"
+            app:layout_constraintEnd_toEndOf="@id/todayPromosList"
+            app:layout_constraintStart_toStartOf="@id/todayPromosList"
+            app:layout_constraintTop_toBottomOf="@id/text_lets_find_out_what_most_interesting_things" />
+
+        <TextView
+            android:id="@+id/text_promotion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/promotion"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@id/text_what_s_the_worst_that_could_happen"
+            app:layout_constraintStart_toStartOf="@id/text_promos_today"
+            app:layout_constraintTop_toBottomOf="@id/toursList" />
+
+        <TextView
+            android:id="@+id/text_what_s_the_worst_that_could_happen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/what_s_the_worst_that_could_happen"
+            app:layout_constraintBottom_toTopOf="@id/promotionList"
+            app:layout_constraintStart_toStartOf="@id/text_promos_today"
+            app:layout_constraintTop_toBottomOf="@id/text_promotion" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/promotionList"
+            android:layout_width="0dp"
+            android:nestedScrollingEnabled="false"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@id/todayPromosList"
+            app:layout_constraintStart_toStartOf="@id/todayPromosList"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_what_s_the_worst_that_could_happen" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

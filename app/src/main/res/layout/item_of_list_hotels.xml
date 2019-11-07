@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/small_8dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/hotel_fragment_item_imageView"
+            android:layout_width="150dp"
+            android:layout_height="180dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@drawable/brick_wall_living_room" />
+        <!--I must change width and height of ImageView then-->
+
+        <RatingBar
+            android:id="@+id/hotel_fragment_item_ratingBar"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/hotel_fragment_item_hotel_name"
+            app:layout_constraintTop_toBottomOf="@+id/hotel_fragment_item_location_coords" />
+
+        <TextView
+            android:id="@+id/hotel_fragment_item_text_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="@string/rating"
+            app:layout_constraintBottom_toBottomOf="@+id/hotel_fragment_item_ratingBar"
+            app:layout_constraintStart_toEndOf="@+id/hotel_fragment_item_ratingBar"
+            app:layout_constraintTop_toTopOf="@+id/hotel_fragment_item_ratingBar" />
+
+        <TextView
+            android:id="@+id/hotel_fragment_item_hotel_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/seattle"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/hotel_fragment_item_imageView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/hotel_fragment_item_text_hotel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/hotel"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/hotel_fragment_item_hotel_name"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/hotel_fragment_item_ic_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_location_on_red_24dp"
+            app:layout_constraintStart_toStartOf="@+id/hotel_fragment_item_hotel_name"
+
+            app:layout_constraintTop_toBottomOf="@id/hotel_fragment_item_hotel_name" />
+
+        <TextView
+            android:id="@+id/hotel_fragment_item_location_coords"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/_4873"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/hotel_fragment_item_ic_location"
+            app:layout_constraintStart_toEndOf="@+id/hotel_fragment_item_ic_location"
+            app:layout_constraintTop_toBottomOf="@+id/hotel_fragment_item_hotel_name" />
+
+        <TextView
+            android:id="@+id/hotel_fragment_item_location_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/natasha_manors"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/hotel_fragment_item_location_coords"
+            app:layout_constraintStart_toEndOf="@+id/hotel_fragment_item_location_coords"
+            app:layout_constraintTop_toTopOf="@+id/hotel_fragment_item_location_coords" />
+
+        <TextView
+            android:id="@+id/hotel_fragment_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/_399"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/hotel_fragment_item_hotel_name"
+            app:layout_constraintTop_toBottomOf="@+id/hotel_fragment_item_ratingBar" />
+
+        <TextView
+            android:id="@+id/hotel_fragment_item_text_avg_night"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/avg_night"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/hotel_fragment_item_hotel_name"
+            app:layout_constraintTop_toBottomOf="@+id/hotel_fragment_item_price" />
+
+        <TextView
+            android:id="@+id/hotel_fragment_item_quantity_of_rooms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/only_5_rooms_leaft"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintStart_toStartOf="@+id/hotel_fragment_item_hotel_name"
+            app:layout_constraintTop_toBottomOf="@id/hotel_fragment_item_text_avg_night" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

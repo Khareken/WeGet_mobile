@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.weget.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_hotel"
+        android:name="com.example.weget.ui.hotel.HotelFragment"
+        android:label="@string/hotel"
+        tools:layout="@layout/fragment_hotel" />
+
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="com.example.weget.ui.account.AccountFragment"
+        android:label="@string/account"
+        tools:layout="@layout/fragment_account" />
+
+    <fragment
+        android:id="@+id/navigation_message"
+        android:name="com.example.weget.ui.message.MessageFragment"
+        android:label="@string/message"
+        tools:layout="@layout/fragment_message" />
+
+    <fragment
+        android:id="@+id/navigation_bottom_menu"
+        android:name="com.example.weget.ui.bottomMenu.BottomMenuFragment"
+        android:label="@string/more"
+        tools:layout="@layout/fragment_bottom_menu" />
+
+</navigation>

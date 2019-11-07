@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">WeGet</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="saved">Saved</string>
+    <string name="hotel">Hotel</string>
+    <string name="more">More</string>
+    <string name="tour">Tour</string>
+    <string name="what_are_you_looking_for">What are you looking for?</string>
+    <string name="car">Car</string>
+    <string name="flight">Flight</string>
+    <string name="cruise">Cruise</string>
+    <string name="bus">Bus</string>
+    <string name="promos_today">Promos Today</string>
+    <string name="tours">Tours</string>
+    <string name="lets_find_out_what_most_interesting_things">Lets find out what most interesting things</string>
+    <string name="promotion">Promotion</string>
+    <string name="what_s_the_worst_that_could_happen">What\'s the Worst That Could Happen</string>
+    <string name="attaction_amp_activities"><![CDATA[Attaction & activities]]></string>
+    <string name="book_now">Book Now</string>
+    <string name="barcelona">Barcelona</string>
+    <string name="_24_dec_2019_2_nights_1_room">24 Dec 2019, 2 Nights, 1 Room</string>
+    <string name="hightest_rating">Hightest Rating</string>
+    <string name="filter">Filter</string>
+    <string name="avg_night">AVG/NIGHT</string>
+    <string name="_399">$399</string>
+    <string name="natasha_manors">Natasha Manors</string>
+    <string name="_4873">4873</string>
+    <string name="seattle">Seattle</string>
+    <string name="rating">Rating</string>
+    <string name="only_5_rooms_leaft">Only 5 rooms leaft</string>
+    <string name="history">History</string>
+    <string name="message">Message</string>
+    <string name="account">Account</string>
+</resources>
