@@ -6,31 +6,31 @@
         android:id="@+id/navigation_home"
         android:icon="@drawable/ic_home_black_24dp"
         android:title="@string/title_home"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="always" />
 
     <item
         android:id="@+id/navigation_hotel"
         android:icon="@drawable/ic_hotel_24dp"
         android:title="@string/hotel"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="always" />
 
 
     <item
         android:id="@+id/navigation_message"
         android:icon="@drawable/ic_account_circle_black_24dp"
         android:title="@string/account"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="always" />
 
     <item
         android:id="@+id/navigation_account"
         android:icon="@drawable/ic_local_post_office_black_24dp"
         android:title="@string/message"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="always" />
 
     <item
         android:id="@+id/navigation_bottom_menu"
         android:icon="@drawable/ic_more_vert_black_24dp"
         android:title="@string/more"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="always" />
 
 </menu>

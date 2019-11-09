@@ -33,4 +33,13 @@
     <string name="history">History</string>
     <string name="message">Message</string>
     <string name="account">Account</string>
+    <string name="search">Search</string>
+    <string name="check_in">Check In</string>
+    <string name="sun_nov_01">Sun, Nov 01</string>
+    <string name="check_out">Check out</string>
+    <string name="sun_nov_11">Sun, Nov 11</string>
+    <string name="total_guest_s">Total Guest(s)</string>
+    <string name="_2_adults_1_children">2 Adults, 1 Children</string>
+    <string name="duration">Duration</string>
+    <string name="apply">Apply</string>
 </resources>

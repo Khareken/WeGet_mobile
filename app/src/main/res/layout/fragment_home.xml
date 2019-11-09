@@ -9,6 +9,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/promotionList"
+            android:layout_width="0dp"
+            android:nestedScrollingEnabled="false"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@id/todayPromosList"
+            app:layout_constraintStart_toStartOf="@id/todayPromosList"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_what_s_the_worst_that_could_happen" />
+
         <ImageView
             android:id="@+id/top_image"
             android:layout_width="match_parent"
@@ -106,15 +116,6 @@
             app:layout_constraintStart_toStartOf="@id/text_promos_today"
             app:layout_constraintTop_toBottomOf="@id/text_promotion" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/promotionList"
-            android:layout_width="0dp"
-            android:nestedScrollingEnabled="false"
-            android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="@id/todayPromosList"
-            app:layout_constraintStart_toStartOf="@id/todayPromosList"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/text_what_s_the_worst_that_could_happen" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

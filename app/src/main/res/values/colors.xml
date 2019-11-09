@@ -8,4 +8,6 @@
     <color name="white">#ffffff</color>
     <color name="dark_gray">#4A4A4A</color>
     <color name="green_darker">#9DBAA2</color>
+    <color name="gray_eeeeee">#F5F5F5</color>
+    <color name="btn_clicked">#589A93</color>
 </resources>

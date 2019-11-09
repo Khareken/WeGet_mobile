@@ -35,5 +35,7 @@ class HomeFragment : Fragment() {
             promotionList.layoutManager =
             GridLayoutManager(context, 2)
 
+
     }
+
 }
