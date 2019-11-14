@@ -17,9 +17,7 @@ import kotlinx.android.synthetic.main.home_search.*
 class HomeFragment : Fragment(R.layout.fragment_home) {
     private val homeFragmentAdapter: HomeFragmentAdapter = HomeFragmentAdapter()
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-
         super.onViewCreated(view, savedInstanceState)
-
 
         todayPromosList.adapter = homeFragmentAdapter
         todayPromosList.layoutManager =
@@ -36,6 +34,8 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         homeSearch.setOnClickListener {
             showBottomSheetDialogFragment()
         }
+       val bottomSheetBehavior = BottomSheetBehavior.from(searchDialog)
+        bottomSheetBehavior.state = BottomSheetBehavior.STATE_EXPANDED
     }
 
 
