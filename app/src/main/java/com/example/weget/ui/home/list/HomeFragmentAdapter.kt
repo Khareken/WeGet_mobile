@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.weget.R
 
 class HomeFragmentAdapter : RecyclerView.Adapter<HomeFragmentViewHolder>() {
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HomeFragmentViewHolder {
         val itemView = LayoutInflater.from(parent.context)
             .inflate(R.layout.item_of_list_promos_today, parent, false)
