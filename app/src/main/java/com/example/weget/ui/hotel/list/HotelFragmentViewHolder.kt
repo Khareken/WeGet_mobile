@@ -19,5 +19,6 @@ class HotelFragmentViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView
     val imageOfHotel: ImageView = itemView.findViewById(R.id.hotel_fragment_item_imageView)
 
     fun populateModel(){
+
     }
 }

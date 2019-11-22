@@ -24,16 +24,12 @@ class HomeFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-            super.onViewCreated(view, savedInstanceState)
-            todayPromosList.adapter = homeFragmentAdapter
-            todayPromosList.layoutManager =
-                LinearLayoutManager(context, RecyclerView.HORIZONTAL, false)
-            toursList.adapter = homeFragmentAdapter
-            toursList.layoutManager =
-                LinearLayoutManager(context, RecyclerView.HORIZONTAL, false)
-            promotionList.adapter = homeFragmentAdapter
-            promotionList.layoutManager =
-            GridLayoutManager(context, 2)
-
+        super.onViewCreated(view, savedInstanceState)
+        todayPromosList.adapter = homeFragmentAdapter
+        todayPromosList.layoutManager = LinearLayoutManager(context, RecyclerView.HORIZONTAL, false)
+        toursList.adapter = homeFragmentAdapter
+        toursList.layoutManager = LinearLayoutManager(context, RecyclerView.HORIZONTAL, false)
+        promotionList.adapter = homeFragmentAdapter
+        promotionList.layoutManager = GridLayoutManager(context, 2)
     }
 }

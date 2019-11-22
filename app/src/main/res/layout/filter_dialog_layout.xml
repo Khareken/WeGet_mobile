@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/price_id"
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:text="@string/price"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/minCost"
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:text="@string/minCost"
+        android:textSize="@dimen/cost_text_size"
+        app:layout_constraintEnd_toStartOf="@id/maxCost"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/price_id" />
+
+    <TextView
+        android:id="@+id/maxCost"
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:text="@string/maxCost"
+        android:textAlignment="viewEnd"
+        android:textSize="@dimen/cost_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/minCost"
+        app:layout_constraintTop_toBottomOf="@id/price_id" />
+
+    <TextView
+        android:id="@+id/avgPrice"
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:text="@string/avg_price"
+        android:textColor="@color/black"
+        android:textSize="@dimen/cost_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/seekBar" />
+
+    <TextView
+        android:id="@+id/mutableAvgPrice"
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="16dp"
+        android:text="@string/from100to1000"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/black"
+        android:textSize="@dimen/cost_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toEndOf="@id/avgPrice"
+        app:layout_constraintTop_toBottomOf="@id/seekBar" />
+
+    <TextView
+        android:id="@+id/guess"
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:text="@string/guests"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/cost_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/avgPrice" />
+
+    <TextView
+        android:id="@+id/adults"
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:text="@string/adults"
+        android:textColor="@color/black"
+        android:textSize="@dimen/cost_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guess" />
+
+    <TextView
+        android:id="@+id/descriptionToAdults"
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:text="@string/descriptionToAdults"
+        android:textSize="@dimen/description_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/adults" />
+
+    <ImageButton
+        android:id="@+id/minusBtn"
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="@drawable/shape_oval"
+        android:src="@drawable/ic_remove_white_24dp"
+        app:layout_constraintBottom_toBottomOf="@id/numberOfAdults"
+        app:layout_constraintEnd_toStartOf="@id/numberOfAdults"
+        app:layout_constraintTop_toTopOf="@id/numberOfAdults" />
+
+    <ImageButton
+        android:id="@+id/plusBtn"
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="@drawable/shape_oval"
+        android:src="@drawable/ic_add_white_24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/descriptionToAdults"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guess" />
+
+    <TextView
+        android:id="@+id/numberOfAdults"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:gravity="center_vertical"
+        android:padding="0dp"
+        android:text="@string/text_number_of_adults"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/plusBtn"
+        app:layout_constraintEnd_toStartOf="@id/plusBtn"
+        app:layout_constraintTop_toTopOf="@+id/plusBtn" />
+
+    <TextView
+        android:id="@+id/children"
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:text="@string/children"
+        android:textColor="@color/black"
+        android:textSize="@dimen/cost_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/descriptionToAdults" />
+
+    <TextView
+        android:id="@+id/descriptionToChildren"
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:text="@string/from2to11years"
+        android:textSize="@dimen/description_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/children" />
+
+    <ImageButton
+        android:id="@+id/minusBtnChildren"
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="@drawable/shape_oval"
+        android:src="@drawable/ic_remove_white_24dp"
+        app:layout_constraintBottom_toBottomOf="@id/numberOfChildren"
+        app:layout_constraintEnd_toStartOf="@id/numberOfChildren"
+        app:layout_constraintTop_toTopOf="@id/numberOfChildren" />
+
+    <ImageButton
+        android:id="@+id/plusBtnChildren"
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="@drawable/shape_oval"
+        android:src="@drawable/ic_add_white_24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/descriptionToChildren"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/children" />
+
+    <TextView
+        android:id="@+id/numberOfChildren"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:gravity="center_vertical"
+        android:padding="0dp"
+        android:text="@string/text_number_of_adults"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/plusBtnChildren"
+        app:layout_constraintEnd_toStartOf="@id/plusBtnChildren"
+        app:layout_constraintTop_toTopOf="@+id/plusBtnChildren" />
+
+    <org.florescu.android.rangeseekbar.RangeSeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        app:absoluteMinValue="100"
+        app:absoluteMaxValue="1000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/minCost" />
+</androidx.constraintlayout.widget.ConstraintLayout>

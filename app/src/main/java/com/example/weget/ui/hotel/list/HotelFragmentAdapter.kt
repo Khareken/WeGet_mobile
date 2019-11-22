@@ -1,13 +1,12 @@
 package com.example.weget.ui.hotel.list
 
-import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.weget.R
 
 class HotelFragmentAdapter : RecyclerView.Adapter<HotelFragmentViewHolder>() {
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HotelFragmentViewHolder {
         val itemView =
             LayoutInflater.from(parent.context).
@@ -16,7 +15,6 @@ class HotelFragmentAdapter : RecyclerView.Adapter<HotelFragmentViewHolder>() {
     }
 
     override fun getItemCount(): Int = 20
-
 
     override fun onBindViewHolder(holder: HotelFragmentViewHolder, position: Int) {
 
