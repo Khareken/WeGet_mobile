@@ -6,4 +6,5 @@
     <dimen name="small_8dp">8dp</dimen>
     <dimen name="home_sections_texts_start_margin">8dp</dimen>
     <dimen name="corners_6dp">6dp</dimen>
+    <dimen name="large_16dp">16dp</dimen>
 </resources>

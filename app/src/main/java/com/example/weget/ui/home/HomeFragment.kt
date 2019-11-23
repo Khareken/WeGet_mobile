@@ -34,8 +34,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         homeSearch.setOnClickListener {
             showBottomSheetDialogFragment()
         }
-       val bottomSheetBehavior = BottomSheetBehavior.from(searchDialog)
-        bottomSheetBehavior.state = BottomSheetBehavior.STATE_EXPANDED
+
     }
 
 
