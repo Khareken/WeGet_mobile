@@ -1,4 +1,5 @@
 <resources>
+
     <string name="app_name">WeGet</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
@@ -42,4 +43,16 @@
     <string name="_2_adults_1_children">2 Adults, 1 Children</string>
     <string name="duration">Duration</string>
     <string name="apply">Apply</string>
+    <string name="price">PRICE</string>
+    <string name="minCost">$100</string>
+    <string name="maxCost">$1000</string>
+    <string name="avg_price">AVG Price</string>
+    <string name="from100to1000">$100 - $1000</string>
+    <string name="guests">Guests</string>
+    <string name="adults">Adults</string>
+    <string name="descriptionToAdults">16+ years</string>
+    <string name="text_number_of_adults">1</string>
+    <string name="children">Children</string>
+    <string name="from2to11years">2 – 11 years</string>
+
 </resources>
